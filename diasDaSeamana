@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class DiaDaSemana {
+public static void main (String args[]){
+    //entrada 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("digite o numero correspondente ao numero da semana (considerando o domingo como o dia 1): ");
+        int dia = sc.nextInt();
+        switch (dia) {
+            case 1:
+            case 7:
+                System.out.println("Fim de semana!");
+            break;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                System.out.println("Dia util!");
+            break;
+            default:
+                System.out.println("Dia invalido!");
+            
+        }
+        sc.close();
+    }
+}
